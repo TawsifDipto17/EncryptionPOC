@@ -67,8 +67,3 @@ pip install -r requirements.txt
 
 # 4. Run the main demo
 python main.py
-
-
-
-
-
