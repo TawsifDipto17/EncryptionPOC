@@ -26,7 +26,7 @@ def load_master_key(path=MASTER_KEY_PATH):
 
 def aesgcm_encrypt(key: bytes, plaintext: bytes):
     aesgcm = AESGCM(key)
-    nonce = os.urandom(12)
+    nonce = os.urandom(12) # DataKey Generation Logic
     ciphertext = aesgcm.encrypt(nonce, plaintext, None)
     return nonce, ciphertext
 
@@ -97,3 +97,4 @@ def process_all_rows_encrypt(conn, master_key):
 
             conn.commit()
             print(f"[info] Encrypted row -> target id {tgt_row_id}")
+
