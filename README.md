@@ -51,10 +51,24 @@ CREATE TABLE customers (
 INSERT INTO customers VALUES
 (1, 'Alice Tan', '123 Orchard Rd', 'alice@example.com', '91234567', 29, 'Female', 'Savings', 5000.75, '2023-09-12');
 ```
-## Run the Demo
+
+---
+
+## Quick Start Commands
+
 ```bash
+# 1. Clone or copy the folder
+cd encryption_poc
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run PostgreSQL and ensure your DB connection details in db_utils.py are correct
+
+# 4. Run the main demo
 python main.py
-```
+
+
 
 
 
